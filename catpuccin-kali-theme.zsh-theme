@@ -26,10 +26,10 @@ case "$OS_NAME" in
 esac
 
 
-PROMPT="${NEWLINE} %{$FG[050]%}$IC_OS %{$FG[033]%}%n@%m %{$FG[225]%}%F{reset}%(6~.%-1~/$IC_FOLDER/%1~.%5~)"
-PROMPT+=' $(git_prompt_info)%{$FG[050]%}$IC_RIGHT '
+PROMPT="${NEWLINE} %{$FG[050]%}$IC_OS %{$FG[154]%}%n@%m %{$FG[245]%}%(6~.%-1~/$IC_FOLDER/%1~.%5~)%F{reset}"
+PROMPT+=' $(git_prompt_info)%{$FG[050]%}$IC_RIGHT %F{reset}'
 
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$FG[176]%}$IC_GIT "
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$FG[199]%}$IC_GIT "
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} "
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%} %{$fg[yellow]%}✗"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%}"

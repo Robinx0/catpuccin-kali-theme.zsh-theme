@@ -26,7 +26,7 @@ case "$OS_NAME" in
 esac
 
 
-PROMPT="${NEWLINE} %{$FG[050]%}$IC_UBUNTU %{$FG[154]%}%n@%m %{$FG[245]%}%(4~.%-1~/$IC_FOLDER/%1~.%3~)%F{reset}"
+PROMPT="${NEWLINE} %{$FG[050]%}$IC_OS %{$FG[154]%}%n@%m %{$FG[245]%}%(4~.%-1~/$IC_FOLDER/%1~.%3~)%F{reset}"
 PROMPT+=' $(git_prompt_info)%{$FG[050]%}$IC_RIGHT %F{reset}'
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$FG[199]%}$IC_GIT "
